@@ -48,7 +48,7 @@ function App() {
     <div 
     className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
     style={{
-      backgroundImage:  `url('https://ucarecdn.com/a47e8886-571a-4a66-be3b-c575f05fb1d8/-/preview/1000x560/')`,
+      backgroundImage:  `url('https://ucarecdn.com/e3da0c57-c0b7-47af-aad6-77ae406d3f03/-/preview/1000x666/')`,
     }}
     >
         <div className="w-full">
