@@ -9,25 +9,7 @@ function App() {
   const[from,setfrom] = useState("usd")
   const[to,setto] = useState("inr")
   const[convertAmount,setconvertAmount] = useState("")
-  const[isDarkmode,setisDarkmode] = useState(false)
 
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if(savedTheme == "dark"){
-      setisDarkmode(true);
-      document.documentElement.classList.add("dark");
-    }
-  },[]);
-
-  const toggletheme=() => {
-    setisDarkmode((prevmode) => {
-      const newMode = !prevmode;
-      document.documentElement.classList.toggle("dark",newMode);
-      localStorage.setItem("theme",newMode ? "dark" : "bright");
-      return newMode;
-    });
-  }
 
   const currencyinfo = usecurrencyinfo(from)
   const options = Object.keys(currencyinfo)
